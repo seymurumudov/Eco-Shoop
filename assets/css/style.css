@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BURADA YALNIZ GLOBAL YENI SEHIFE BUTUN HERSEYI EHATE EDEN KODLAR OLACAQ */
+body {
+    font-family: "Inter", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* ----------------- global kodlarin bitdiyi yer */
+
+/* ----- BURADA TOP HEADER KODLARI YER ALIR */
+header .top-header {
+    height: 54px;
+    border-bottom: 1px solid rgba(52, 168, 83, 0.06);
+    background: rgba(52, 168, 83, 0.06);
+}
+
+header .top-header .top-header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+header .top-header .top-header-nav .left-nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .top-header .top-header-nav .left-nav a {
+   font-size: 14px;
+   color: #1D1D1D;
+   font-weight: 500;
+}
+
+header .top-header .top-header-nav .right-nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .top-header .top-header-nav .right-nav li a {
+    font-size: 14px;
+    color: #1D1D1D;
+}
+
+header .top-header .top-header-nav .right-nav li a i {
+    color: #27AE60;
+}
+
+/* -------- TOP HEADER BITISH */
+
+/* BURADA ORTA HEADERIMIZ KODLARI YER ALIR */
+
+header .middle-header .middle-header-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+header .middle-header .search-box {
+    display: flex;
+    justify-content: center;
+}
+
+header .middle-header {
+    height: 85px;
+}
+
+header .middle-header .middle-header-row {
+    height: 85px;
+}
