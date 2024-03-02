@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Document</title>
 </head>
@@ -36,7 +37,7 @@
                             <a href="">Support</a>
                         </li>
                     </ul>
-    
+
                     <!-- sag linkler -->
                     <ul class="right-nav">
                         <li>
@@ -107,7 +108,7 @@
                                     <span>0</span>
                                 </a>
                             </li>
-                           
+
                             <li>
                                 <a href="">
                                     <i class="fa-regular fa-user"></i>
@@ -121,12 +122,150 @@
         </div>
 
         <!-- en asagi header -->
-        <div class="bottom-header"></div>
+        <div class="bottom-header">
+            <div class="container">
+                <nav>
+                    <!-- category secmek ucun dropdown -->
+                    <div class="dropdown-category">
+                        <!-- bu butona klik oldukda asagidaki siyahidaki menyular acilacaq -->
+                        <button>
+                            <i class="fa-solid fa-bars"></i>
+                            <span>All Categories</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <!-- menyular -->
+                        <ul class="dropdown-category-menu">
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-anchor"></i>
+                                    <span> Vegetable</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Fruits</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-anchor"></i>
+                                    <span> Vegetable</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Fruits</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-anchor"></i>
+                                    <span> Vegetable</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Fruits</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- sehifede olan kecidler -->
+                    <ul class="navbar">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li class="navbar-dropdown-menu">
+                            <a href="">
+                                Pages
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+
+                            <ul>
+                                <li>
+                                    <a href="">Product Detail</a>
+                                </li>
+                                <li>
+                                    <a href="">Product Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Term & Condition</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main></main>
+    <main>
+        <!-- slayd(carousel) ucun section -->
+        <section>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <!-- bura sol terefdeki menyudur -->
+                            <div class="col-6">
+                                <h3>Fresh Grocery</h3>
+                                <h1>
+                                    There's you can Buy your all of Grocery Products.
+                                </h1>
+                                <button>Show Now</button>
+                            </div>
+
+                            <!-- sag terefdeki slayd sekil ucun -->
+                            <div class="col-6">
+                                <img src="/assets/images/slider-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+
+            </div>
+        </section>
+        <!-- ------- son slider section ------  -->
+
+
+        <!-- diger section bu qayda ile olacaq yeni ayrica section semantic teqinin icerisinde -->
+        <section>
+
+        </section>
+    </main>
 
     <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
